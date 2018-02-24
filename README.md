@@ -28,12 +28,12 @@ mkdir wp-content
 docker-compose up -d 
 
 ```
+※ Docker for Macをインストールすると、Docker Composeもセットでついてきます。
 
 dockerがちゃんと動けば、以下ですぐにWordPressにアクセスできます。  
-`https://localhost:9000`
+[http://localhost:9000](http://localhost:9000)
 
 一瞬でできるし、環境がコードベースなので、差異がありません。すごい。
-
 
 作成 : `<tkg.japan@gmail.com>`  
 

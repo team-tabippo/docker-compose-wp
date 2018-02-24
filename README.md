@@ -9,15 +9,11 @@
 - Docker for Macを落とす  
 [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
   
-  
-## Basic
 
-
-### 始め方
-
+## How to start 
 
 ```
-git clone git@bitbucket.org:hirokitakagi/docker-compose-wp.git 
+git clone https://github.com/hiroki-tkg/docker-compose-wp.git
 mv docker-compose-wp [任意の開発用ディレクトリ名] 
 cd [任意の開発用ディレクトリ名]
 

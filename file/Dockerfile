@@ -21,7 +21,6 @@ RUN wget https://downloads.wordpress.org/plugin/simple-301-redirects.1.07.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-user-avatar.zip
 
-https://wordpress.org/plugins/advanced-custom-fields/
 # Zip ファイルを解凍してインストール
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/plugins
 
@@ -35,6 +34,7 @@ RUN rm -rf /usr/src/wordpress/wp-content/themes/twentyfifteen
 RUN rm -rf /usr/src/wordpress/wp-content/themes/index.php
 RUN rm -f /usr/src/wordpress/wp-content/plugins/hello.php
 RUN rm -f /usr/src/wordpress/wp-content/plugins/index.php
+RUN rm -f /usr/src/wordpress/wp-content/index.php
 
 # サーバが読めるように wp-content 以下の所有者を変更
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content

@@ -13,8 +13,7 @@
 ## How to start 
 
 ```
-git clone https://github.com/hiroki-tkg/docker-compose-wp.git
-mv docker-compose-wp [任意の開発用ディレクトリ名] 
+git clone https://github.com/hiroki-tkg/docker-compose-wp.git [任意の開発用ディレクトリ名]
 cd [任意の開発用ディレクトリ名]
 
 # 環境git関連削除
@@ -33,8 +32,19 @@ docker-compose up -d
 dockerがちゃんと動けば、以下ですぐにWordPressにアクセスできます。  
 [http://localhost:9000](http://localhost:9000)
 
-一瞬でできるし、環境がコードベースなので、差異がありません。すごい。
+一瞬でできるし、環境がコードベースなので、差異がありません。
 
-作成 : `<tkg.japan@gmail.com>`  
+作成 : `<tkg.japan@gmail.com>` 
+
+
+## 課題
+wp cliを使って、テーマやpluginをいじりたいけど、wordpress coreがないとwp cliが動かない。  
+そこで、wordpressコンテナで、volumeを ./:/var/www/html/　のようにして、  
+wordpress coreがローカルにもくるように設定して試すも、wordpress coreの本体は、  
+dockerのwordpressコンテナにあるので、wp cliがエラーで使えない。
+  
+  
+何が一番やりやすいのか現状検討中です。
+ 
 
 

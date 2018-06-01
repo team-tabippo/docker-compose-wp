@@ -9,6 +9,9 @@
 - Docker for Macを落とす  
 [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
   
+- アカウントを作成する(右上の"Create Docker ID"から作成できます)  
+[https://www.docker.com/docker-mac](https://www.docker.com/docker-mac)  
+
 
 ## How to start 
 

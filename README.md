@@ -20,8 +20,7 @@ git clone https://github.com/hiroki-tkg/docker-compose-wp.git [任意の開発�
 cd [任意の開発用ディレクトリ名]
 
 # 環境git関連削除
-rm -rf .git
-rm -f .gitignore
+rm -rf .git .gitignore
 
 # ホストPCで編集できるように、wp-contentを作成
 mkdir wp-content

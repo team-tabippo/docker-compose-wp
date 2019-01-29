@@ -28,6 +28,9 @@ mkdir wp-content
 # Docker Compose をデタッチで起動
 docker-compose up -d 
 
+# [おまけ] 編集まで1行でいけるコマンド
+git clone https://github.com/hiroki-tkg/docker-compose-wp.git [任意の開発用ディレクトリ名] && cd [任意の開発用ディレクトリ名] && rm -rf .git .gitignore && mkdir wp-content && subl ../[任意の開発用ディレクトリ名]
+
 ```
 ※ Docker for Macをインストールすると、Docker Composeもセットでついてきます。
 
